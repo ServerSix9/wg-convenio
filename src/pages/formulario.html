@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - WG Convênios</title>
+
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Formulário de contato WG Convênios Funerários">
+    <meta name="keywords" content="formulário, contato, convênios funerários">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+
+    <link rel="stylesheet" href="../assets/css/formulario.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="plano-whatsapp">
+            <div class="container">
+                <h2>Selecione seu plano e proporcione mais tranquilidade para você e sua família.</h2>
+
+                <!-- Indicadores de Etapa -->
+                <div class="steps-indicator d-flex justify-content-center align-items-center gap-3 my-4">
+                    <div id="circle1" class="step-circle active">1</div>
+                    <div class="step-line"></div>
+                    <div id="circle2" class="step-circle">2</div>
+                </div>
+
+                <!-- Etapa 1 - Seleção do Plano -->
+                <div id="step1" class="step active">
+                    <h3>Escolha seu Plano</h3>
+                    <div class="form-group">
+                        <label for="plano"><i class="fas fa-hand-holding-heart"></i> Plano</label>
+                        <select id="plano">
+                            <option value="">Selecione...</option>
+                            <option value="Plano Bronze - R$ 40,00/mês">Plano Bronze - R$ 40,00/mês</option>
+                            <option value="Plano Prata - R$ 60,00/mês">Plano Prata - R$ 60,00/mês</option>
+                            <option value="Plano Ouro - R$ 900,00/mês">Plano Ouro - R$ 900,00/mês</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button onclick="nextStep()" class="btn-primary">
+                        Próximo <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Etapa 2 - Dados Pessoais -->
+                <div id="step2" class="step">
+                    <h3>Seus Dados</h3>
+
+                    <!-- Dados Pessoais -->
+                    <div class="form-group mb-4">
+                        <label for="nome"><i class="fas fa-user"></i> Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="rg"><i class="fas fa-id-card"></i> RG</label>
+                        <input type="text" id="rg" placeholder="Digite seu RG">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="cpf"><i class="fas fa-id-badge"></i> CPF</label>
+                        <input type="text" id="cpf" placeholder="Digite seu CPF">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="nascimento"><i class="fas fa-calendar-alt"></i> Data de Nascimento</label>
+                        <input type="date" id="nascimento">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="telefone"><i class="fas fa-phone"></i> Telefone</label>
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="profissao"><i class="fas fa-briefcase"></i> Profissão</label>
+                        <input type="text" id="profissao" placeholder="Sua profissão">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="religiao"><i class="fas fa-praying-hands"></i> Religião</label>
+                        <input type="text" id="religiao" placeholder="Sua religião">
+                    </div>
+
+                    <!-- Endereço -->
+                    <div class="form-group mb-4">
+                        <label for="endereco"><i class="fas fa-map-marker-alt"></i> Endereço</label>
+                        <input type="text" id="endereco" placeholder="Rua, número">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="bairro"><i class="fas fa-city"></i> Bairro</label>
+                        <input type="text" id="bairro" placeholder="Seu bairro">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="cidade"><i class="fas fa-city"></i> Cidade</label>
+                        <input type="text" id="cidade" placeholder="Sua cidade">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="cep"><i class="fas fa-mail-bulk"></i> CEP</label>
+                        <input type="text" id="cep" placeholder="00000-000">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="estadoCivil"><i class="fas fa-ring"></i> Estado Civil</label>
+                        <input type="text" id="estadoCivil" placeholder="Seu estado civil">
+                    </div>
+                    <!-- Botões -->
+                    <div class="d-flex justify-content-between gap-3 mt-4">
+                        <button onclick="backStep()" class="btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </button>
+                        <button onclick="enviarWhatsapp()" class="btn-primary">
+                            Enviar <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ícone do WhatsApp -->
+    <div class="whatsapp-icon"
+        onclick="window.open('https://wa.me/5511981050511?text=Olá,%20venho%20pelo%20site%20da%20WG%20Convênios%20Funerários.', '_blank')">
+        <i class="fab fa-whatsapp fa-3x" aria-label="Ícone do WhatsApp"></i>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="../assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/formulario.js"></script>
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/components/navpages.js"></script>
+</body>
+
+</html>

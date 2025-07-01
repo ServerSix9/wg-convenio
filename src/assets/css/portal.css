@@ -1,0 +1,94 @@
+:root {
+  --card-funcionalidade-radius: 1rem;
+  --card-funcionalidade-padding-top: 1.2rem;
+  --card-funcionalidade-bg: #fff;
+  --card-funcionalidade-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  --card-funcionalidade-hover-transform: translateY(-6px) scale(1.03);
+  --card-funcionalidade-hover-box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
+  --icon-circle-size: 72px;
+  --icon-circle-radius: 50%;
+  --icon-circle-bg: linear-gradient(135deg, #e9f0f9 60%, rgba(0, 51, 102, 0.07) 100%);
+  --icon-circle-hover-bg: linear-gradient(135deg, #d0e2f2 60%, rgba(0, 51, 102, 0.13) 100%);
+  --icon-circle-font-size: 1.8rem;
+  --icon-circle-margin-bottom: 1rem;
+  --card-title-font-weight: 600;
+  --card-title-color: #003366;
+  --card-title-margin-bottom: 0.5rem;
+  --btn-font-weight: 500;
+  --btn-radius: 0.5rem;
+  --btn-font-size: 1rem;
+  --btn-box-shadow: 0 2px 6px rgba(0, 51, 102, 0.04);
+  --btn-active-focus-box-shadow: 0 4px 12px rgba(0, 51, 102, 0.10);
+  --card-text-color: #555;
+  --card-text-font-size: 0.97rem;
+  --card-text-margin-bottom: 1.1rem;
+  --small-font-size: 0.82rem;
+  --small-color: #888;
+  --small-margin-top: 0.2rem;
+}
+
+.card-funcionalidade {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--card-funcionalidade-radius);
+  padding-top: var(--card-funcionalidade-padding-top);
+  background: var(--card-funcionalidade-bg);
+  border: none;
+  box-shadow: var(--card-funcionalidade-box-shadow);
+}
+
+.card-funcionalidade:hover {
+  transform: var(--card-funcionalidade-hover-transform);
+  box-shadow: var(--card-funcionalidade-hover-box-shadow);
+}
+
+.card-funcionalidade .icon-circle {
+  width: var(--icon-circle-size);
+  height: var(--icon-circle-size);
+  border-radius: var(--icon-circle-radius);
+  background: var(--icon-circle-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--icon-circle-margin-bottom);
+  font-size: var(--icon-circle-font-size);
+  color: inherit;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card-funcionalidade:hover .icon-circle {
+  background: var(--icon-circle-hover-bg);
+}
+
+.card-funcionalidade .card-title,
+.card-funcionalidade h5 {
+  font-weight: var(--card-title-font-weight);
+  color: var(--card-title-color);
+  margin-bottom: var(--card-title-margin-bottom);
+}
+
+.card-funcionalidade .btn {
+  font-weight: var(--btn-font-weight);
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-font-size);
+  transition: box-shadow 0.2s;
+  box-shadow: var(--btn-box-shadow);
+}
+
+.card-funcionalidade .btn:active,
+.card-funcionalidade .btn:focus {
+  box-shadow: var(--btn-active-focus-box-shadow);
+}
+
+.card-funcionalidade p,
+.card-funcionalidade .card-text {
+  color: var(--card-text-color);
+  font-size: var(--card-text-font-size);
+  margin-bottom: var(--card-text-margin-bottom);
+}
+
+.card-funcionalidade small {
+  font-size: var(--small-font-size);
+  color: var(--small-color);
+  display: block;
+  margin-top: var(--small-margin-top);
+}
