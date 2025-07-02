@@ -60,13 +60,11 @@ function toggleDarkMode(button = null) {
   atualizarTextoModoEscuro(isDark);
 }
 
-// === Contraste alto ===
 function toggleContraste() {
   document.body.classList.toggle("contraste-alto");
   localStorage.setItem("contrasteAlto", document.body.classList.contains("contraste-alto"));
 }
 
-// === Atualizar o texto do botão modo escuro ===
 function atualizarTextoModoEscuro(isDark) {
   const textoBtn = document.querySelector('#modoEscuroTexto');
   if (textoBtn) {
@@ -74,7 +72,6 @@ function atualizarTextoModoEscuro(isDark) {
   }
 }
 
-// === Aplicar preferências ao carregar ===
 function aplicarPreferencias() {
   const fonteSalva = localStorage.getItem("tamanhoFonte");
   if (fonteSalva) {

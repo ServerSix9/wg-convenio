@@ -1,4 +1,3 @@
-// Máscara simples para telefone
 document.getElementById('phone').addEventListener('input', function (e) {
   let value = e.target.value.replace(/\D/g, '');
   if (value.length > 11) value = value.slice(0, 11);
@@ -23,7 +22,6 @@ function enviarWhatsapp() {
   const telefone = document.getElementById('phone').value.trim();
   const mensagem = document.getElementById('message').value.trim();
 
-  // Validações
   if (!nome) {
     alert('Por favor, preencha seu nome.');
     return;
@@ -55,8 +53,7 @@ function enviarWhatsapp() {
     return;
   }
 
-  // Montagem da mensagem
-  const texto = `Olá, me chamo ${nome}.
+const texto = `Olá, me chamo ${nome}.
 Gostaria de mais informações.
 
 E-mail: ${email}

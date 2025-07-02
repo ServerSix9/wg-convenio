@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalCloseBtn = document.getElementById("modalCloseBtn");
     const modalBottomCloseBtn = document.getElementById("modalBottomCloseBtn");
 
-    // Mostrar só os primeiros 5 itens em cada plano
     document.querySelectorAll(".plan-card").forEach(planCard => {
         const items = planCard.querySelectorAll(".plan-body ul li");
         items.forEach((li, index) => {
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Botão "Ver detalhes"
     document.querySelectorAll(".details-btn").forEach(btn => {
         btn.addEventListener("click", e => {
             const planCard = e.target.closest(".plan-card");
@@ -23,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const allItems = planCard.querySelectorAll(".plan-body ul li");
 
             modalTitle.textContent = planTitle;
-            modalList.innerHTML = ""; // limpa lista do modal
+            modalList.innerHTML = ""; 
 
             allItems.forEach(li => {
                 const clone = li.cloneNode(true);
-                clone.style.display = "list-item"; // garante que aparece no modal
+                clone.style.display = "list-item";
                 modalList.appendChild(clone);
             });
 
@@ -36,26 +34,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Função para fechar o modal
     const closeModal = () => {
         modal.classList.remove("active");
         document.body.style.overflow = "";
     };
 
-    // Fechar modal com botão X
     modalCloseBtn.addEventListener("click", closeModal);
 
-    // Fechar modal com botão FECHAR
     modalBottomCloseBtn.addEventListener("click", closeModal);
 
-    // Fechar modal clicando fora da caixa
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             closeModal();
         }
     });
 
-    // Fechar modal com tecla ESC
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape" && modal.classList.contains("active")) {
             closeModal();

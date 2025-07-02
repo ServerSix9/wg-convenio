@@ -1,4 +1,3 @@
-// ----- Máscaras -----
 document.addEventListener('input', function (e) {
     const target = e.target;
 
@@ -64,7 +63,6 @@ function validarCPF(cpf) {
     return digito1 == cpfLimpo.charAt(9) && digito2 == cpfLimpo.charAt(10);
 }
 
-// ----- Validações -----
 function validarEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
@@ -80,7 +78,6 @@ function validarCEP(cep) {
     return cepLimpo.length === 8;
 }
 
-// ----- Feedback Visual -----
 function marcarCampoInvalido(id, valido) {
     const campo = document.getElementById(id);
     if (!valido) {
@@ -90,7 +87,6 @@ function marcarCampoInvalido(id, valido) {
     }
 }
 
-// ----- Animações -----
 function nextStep() {
     const plano = document.getElementById('plano').value;
     if (!plano) {
@@ -127,7 +123,6 @@ function backStep() {
     document.getElementById('circle1').classList.add('active');
 }
 
-// ----- Enviar WhatsApp -----
 function enviarWhatsapp() {
     const campos = [
         'plano', 'nome', 'rg', 'email', 'telefone', 'cpf', 'nascimento',
