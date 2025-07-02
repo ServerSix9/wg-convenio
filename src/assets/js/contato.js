@@ -53,7 +53,7 @@ function enviarWhatsapp() {
     return;
   }
 
-const texto = `Olá, me chamo ${nome}.
+  const texto = `Olá, me chamo ${nome}.
 Gostaria de mais informações.
 
 E-mail: ${email}
