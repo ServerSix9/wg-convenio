@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <!-- Metas Essenciais -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WG Convênios Funerários | Planos e Assistência</title>
-
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/wg.png">
-
     <!-- Pré-carregamento de fontes (Performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/utils/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -27,26 +22,18 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/components/footer.css">
     <link rel="stylesheet" href="../assets/css/components/navbar.css">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
 </head>
-
 <body>
-
     <header>
         <h1><i class="fas fa-hand-holding-heart"></i> Planos WG Convênios</h1>
         <p>Escolha o plano ideal para sua família</p>
     </header>
-
     <div class="space"></div>
-
     <div class="container">
-
         <div id="plans" class="plans">
             <!-- Plano Bronze -->
             <div class="plan-card bronze">
@@ -72,12 +59,11 @@
                         <li><i class="ri-cup-line"></i>Kit de café (2kg de açúcar e ½ kg de pó de café)</li>
                     </ul>
                 </div>
-                <div class="plan-footer">
+                <div class="plan-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <button onclick="contratar('Plano Bronze')">Contratar</button>
                     <button class="details-btn">Ver detalhes</button>
                 </div>
             </div>
-
             <!-- Plano Ouro -->
             <div class="plan-card ouro destaque">
                 <div class="plan-header">
@@ -109,12 +95,11 @@
                         <li><i class="ri-heart-pulse-line"></i> Acompanhamento personalizado completo</li>
                     </ul>
                 </div>
-                <div class="plan-footer">
+                <div class="plan-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <button onclick="contratar('Plano Ouro')">Contratar</button>
                     <button class="details-btn">Ver detalhes</button>
                 </div>
             </div>
-
             <!-- Plano Prata -->
             <div class="plan-card prata destaque">
                 <div class="plan-header">
@@ -145,13 +130,12 @@
                         <li><i class="ri-headphone-line"></i> Suporte estendido à família</li>
                     </ul>
                 </div>
-                <div class="plan-footer">
+                <div class="plan-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <button onclick="contratar('Plano Prata')">Contratar</button>
                     <button class="details-btn">Ver detalhes</button>
                 </div>
             </div>
         </div>
-
         <!-- Modal de detalhes -->
         <div class="modal-overlay" id="planModal">
             <div class="modal-content">
@@ -167,7 +151,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Cobertura -->
         <div class="coverage">
             <div class="coverage-header text-center mb-5">
@@ -177,7 +160,6 @@
                 <p style="color: #000000 !important;" impor class="text-muted">Confira as cidades atendidas em cada
                     plano</p>
             </div>
-
             <div class="row g-4">
                 <!-- Plano Bronze -->
                 <div class="col-md-4">
@@ -195,7 +177,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Plano Ouro -->
                 <div class="col-md-4">
                     <div class="coverage-card ouro">
@@ -212,7 +193,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Plano Prata -->
                 <div class="col-md-4">
                     <div class="coverage-card prata">
@@ -231,9 +211,7 @@
                 </div>
             </div>
         </div>
-
         <!-- MODAIS -->
-
         <!-- Modal Bronze -->
         <div class="modal fade" id="modalBronze" tabindex="-1" aria-labelledby="modalBronzeLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
@@ -259,7 +237,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Modal Ouro -->
         <div class="modal fade" id="modalOuro" tabindex="-1" aria-labelledby="modalOuroLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
@@ -323,7 +300,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Modal Prata -->
         <div class="modal fade" id="modalPrata" tabindex="-1" aria-labelledby="modalPrataLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
@@ -409,7 +385,6 @@
             </div>
         </div>
     </div>
-
     <!-- Botão de voltar ao topo -->
     <button id="backToTopBtn" class="back-to-top" aria-label="Voltar ao topo">
         <svg class="arrow-icon" viewBox="0 0 24 24">
@@ -421,7 +396,6 @@
         onclick="window.open('https://wa.me/5511981050511?text=Olá,%20venho%20pelo%20site%20da%20WG%20Convênios%20Funerários.', '_blank')">
         <i class="fab fa-whatsapp fa-3x" aria-label="Ícone do WhatsApp"></i>
     </div>
-
     <!-- Scripts -->
     <script src="../assets/js/components/navpages.js"></script>
     <script src="../assets/js/nav.js"></script>
@@ -441,5 +415,4 @@
     </div>
     <!-- Eduardo Dos Santos Ferreira -->
 </body>
-
 </html>
