@@ -35,37 +35,31 @@
     --show-more-btn-shadow: 0 4px 15px rgba(0, 51, 102, 0.4);
     --show-more-btn-shadow-hover: 0 6px 20px rgba(0, 31, 77, 0.7);
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     padding-top: 200px;
 }
-
 header {
     background-color: var(--primary-color);
     color: #fff;
     padding: var(--header-padding);
     text-align: center;
 }
-
 header h1 {
     font-size: var(--header-title-size);
 }
-
 .plans {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
 .plan-card {
     background-color: #fff;
     border-radius: 15px;
@@ -73,71 +67,55 @@ header h1 {
     transition: transform 0.3s;
     border: 3px solid transparent;
 }
-
 .plan-card:hover {
     transform: translateY(-5px);
 }
-
-/* Cores dos planos */
 .bronze .plan-header {
     background-color: var(--bronze);
 }
-
 .prata .plan-header {
     background-color: var(--prata);
     color: #333;
 }
-
 .ouro .plan-header {
     background-color: var(--ouro);
     color: #333;
 }
-
 .bronze:hover {
     border-color: var(--bronze);
 }
-
 .prata:hover {
     border-color: var(--prata);
 }
-
 .ouro:hover {
     border-color: var(--ouro);
 }
-
 .plan-header {
     padding: 20px;
     border-radius: 15px 15px 0 0;
     text-align: center;
 }
-
 .plan-header h2 {
     margin-bottom: 10px;
 }
-
 .plan-body {
     padding: 20px;
 }
-
 .plan-body ul {
     list-style: none;
 }
-
 .plan-body ul li {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
 }
-
 .plan-body ul li i {
     color: var(--secondary-color);
     margin-right: 8px;
 }
-
 .plan-footer {
     padding: 20px;
     text-align: center;
 }
-
 .plan-footer button {
     background-color: var(--secondary-color);
     color: white;
@@ -147,22 +125,17 @@ header h1 {
     cursor: pointer;
     transition: background 0.3s;
 }
-
 .plan-footer button:hover {
     background-color: var(--secondary-hover);
 }
-
 .plan-body ul li.extra {
     display: none;
 }
-
 .plan-body.expanded ul li.extra {
     display: list-item;
 }
-
 .show-more-btn {
     background-color: var(--show-more-btn-bg);
-    /* azul profundo */
     color: white;
     border: none;
     padding: 12px 30px;
@@ -177,19 +150,15 @@ header h1 {
     box-shadow: var(--show-more-btn-shadow);
     user-select: none;
 }
-
 .show-more-btn:hover {
     background-color: var(--show-more-btn-hover);
-    /* tom ainda mais escuro */
     transform: scale(1.05);
     box-shadow: var(--show-more-btn-shadow-hover);
 }
-
 .show-more-btn:focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--show-more-btn-bg);
 }
-
 .coverage {
     background-color: #fff;
     padding: 40px 20px;
@@ -197,43 +166,36 @@ header h1 {
     box-shadow: var(--box-shadow);
     margin-top: 40px;
 }
-
 .coverage h2 {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
-
 .coverage h3 {
     color: #000000;
     margin-top: 20px;
 }
-
 .coverage ul {
     columns: 2;
     list-style: disc;
     margin-left: 20px;
 }
-
 footer {
     background-color: var(--primary-color);
     color: white;
     padding: 10px;
     margin-top: 40px;
 }
-
 @media (max-width: 600px) {
     .coverage ul {
         columns: 1;
     }
 }
-
 .plans {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
-
 .plan-card {
     border-radius: var(--plan-card-radius);
     overflow: hidden;
@@ -243,29 +205,23 @@ footer {
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .plan-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
-
 .plan-header {
     padding: var(--plan-header-padding);
     color: #fff;
 }
-
 .bronze .plan-header {
     background: linear-gradient(135deg, var(--bronze), var(--bronze-dark));
 }
-
 .prata .plan-header {
     background: linear-gradient(135deg, var(--prata), var(--prata-dark));
 }
-
 .ouro .plan-header {
     background: linear-gradient(135deg, var(--ouro), var(--ouro-dark));
 }
-
 .plan-header h2 {
     margin: 0;
     font-size: 1.625rem;
@@ -273,23 +229,19 @@ footer {
     align-items: center;
     gap: 10px;
 }
-
 .plan-header p {
     margin-top: 5px;
     font-size: 0.875rem;
     opacity: 0.9;
 }
-
 .plan-body {
     padding: 25px;
     flex-grow: 1;
 }
-
 .plan-body ul {
     list-style: none;
     padding: 0;
 }
-
 .plan-body li {
     margin-bottom: 12px;
     display: flex;
@@ -298,7 +250,6 @@ footer {
     color: #555;
     font-size: 0.9375rem;
 }
-
 .plan-body li i {
     color: var(--icon-blue);
     background-color: var(--icon-bg);
@@ -306,14 +257,12 @@ footer {
     border-radius: 50%;
     font-size: 1.125rem;
 }
-
 .plan-footer {
     padding: 20px 25px;
     border-top: var(--plan-footer-border);
     background-color: var(--plan-footer-bg);
     text-align: center;
 }
-
 .plan-footer button {
     padding: 12px 24px;
     border: none;
@@ -324,12 +273,9 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .plan-footer button:hover {
     background-color: var(--plan-footer-btn-hover);
 }
-
-/* Cobertura */
 .coverage {
     background-color: #ffffff;
     border-radius: 16px;
@@ -338,11 +284,9 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
-
 .coverage:hover {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
-
 .coverage-header h2 {
     display: inline-flex;
     align-items: center;
@@ -352,13 +296,11 @@ footer {
     color: #222;
     margin-bottom: 12px;
 }
-
 .coverage-header p {
     color: #666;
     font-size: 1rem;
     margin-bottom: 40px;
 }
-
 .coverage-card {
     border-radius: 12px;
     padding: 25px 20px;
@@ -369,12 +311,10 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .coverage-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
-
 .coverage-card-header h3 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -384,7 +324,6 @@ footer {
     gap: 10px;
     margin-bottom: 24px;
 }
-
 .coverage-card-body ul {
     margin: 0;
     padding-left: 1.25rem;
@@ -392,37 +331,28 @@ footer {
     font-size: 0.9375rem;
     line-height: 1.6;
 }
-
 .coverage-card-body li {
     margin-bottom: 8px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .coverage-card-body li i {
     color: var(--success-green);
-    /* verde sucesso */
     font-size: 1.125rem;
 }
-
-/* Cores específicas para planos */
 .coverage-card.bronze {
     border: 2px solid #b87333;
     background: linear-gradient(135deg, #f0e1d2, #f9f5f1);
 }
-
 .coverage-card.prata {
     border: 2px solid var(--prata);
     background: linear-gradient(135deg, #e7e8ea, #f9f9fa);
 }
-
 .coverage-card.ouro {
     border: 2px solid var(--ouro);
     background: linear-gradient(135deg, #fff9d6, #fffbea);
 }
-
-/* Modal fundo */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -435,13 +365,9 @@ footer {
     justify-content: center;
     z-index: 9999;
 }
-
-/* Modal visível */
 .modal-overlay.active {
     display: flex;
 }
-
-/* Caixa do modal */
 .modal-content {
     background: var(--modal-content-bg);
     border-radius: var(--modal-content-radius);
@@ -453,34 +379,25 @@ footer {
     box-shadow: var(--modal-content-shadow);
     position: relative;
 }
-
-/* Título do modal */
 .modal-content h3 {
     margin-top: 0;
     margin-bottom: 15px;
     color: var(--show-more-btn-bg);
-    /* azul profundo */
     text-align: center;
 }
-
-/* Lista completa */
 .modal-content ul {
     list-style: none;
     padding-left: 0;
 }
-
 .modal-content ul li {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     color: #333;
 }
-
 .modal-content ul li i {
     color: var(--secondary-color);
     margin-right: 8px;
 }
-
-/* Botão fechar */
 .modal-close-btn {
     position: absolute;
     top: 12px;
@@ -499,16 +416,13 @@ footer {
     user-select: none;
     transition: background-color 0.3s ease;
 }
-
 .modal-close-btn:hover {
     background-color: var(--modal-close-hover);
 }
-
 #Planos ul li,
 #plans ul li {
     color: #000 !important;
 }
-
 #modalPrataLabel h5 {
     color: black !important;
 }

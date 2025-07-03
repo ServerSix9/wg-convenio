@@ -31,7 +31,6 @@ window.addEventListener("scroll", () => {
   prevScrollPos = currentScrollPos;
 });
 
-// === Ajuste de fonte (global via <html>) ===
 function ajustarFonte(incremento) {
   const html = document.documentElement;
   const estiloAtual = window.getComputedStyle(html).fontSize;
@@ -45,7 +44,6 @@ function ajustarFonte(incremento) {
   localStorage.setItem('tamanhoFonte', novoTamanho);
 }
 
-// === Modo escuro com troca de texto e aria-pressed ===
 function toggleDarkMode(button = null) {
   const body = document.body;
   body.classList.toggle("dark-mode");
