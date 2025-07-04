@@ -462,3 +462,20 @@ body {
 .back-to-top.visible:hover {
   animation: pulse 1.5s infinite;
 }
+
+@media (max-width: 600px) {
+    .hero h1.display-4 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .hero h2.lead {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+}
